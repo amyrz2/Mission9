@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IQueryable<Book>
+
+<div class="text-center">
+    <h1>Welcome to</h1>
+    <h1>Amy's Bookstore</h1>
+
+@*display model*@
+    @foreach (Book b in Model)
+    {
+        <h3>@b.Title</h3>
+
+        <ul>
+            <li>Author: @b.Author</li>
+            <li>Publisher: @b.Publisher</li>
+            <li>ISBN: @b.Isbn Served</li>
+            <li>Classification: @b.Classification</li>
+            <li>Category: @b.Category</li>
+            <li>Pages: @b.PageCount</li>
+            <li>Price: @b.Price</li>
+        </ul>
+        <br />
+    }
+
+@*page numbers*@
+    <a asp-action="Index" asp-route-pageNum="1">1</a>
+
+</div>
+
