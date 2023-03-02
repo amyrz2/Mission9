@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Bookstore.Models;
+using Bookstore.Models.ViewModels;
 
 namespace Bookstore.Controllers
 {
@@ -26,12 +27,24 @@ namespace Bookstore.Controllers
 
             int pageSize = 10;
 
-            var blah = repo.Books
-                .OrderBy(p => p.Title)
+            var x = new BooksViewModel
+            {
+                Books = repo.Books
+                .OrderBy(b => b.Title) 
                 .Skip((pageNum - 1) * pageSize)
-                .Take(pageSize);
+                .Take(pageSize),
 
-            return View(blah);
+                PageInfo = new PageInfo
+                {
+                    TotalNumBooks = repo.Books.Count(),
+                    BooksPerPage = pageSize,
+                    CurrentPage = pageNum
+
+                }
+            };
+
+
+            return View(x);
         }
 
         public IActionResult Privacy()

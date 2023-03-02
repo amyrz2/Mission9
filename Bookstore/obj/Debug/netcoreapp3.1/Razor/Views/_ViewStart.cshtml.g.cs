@@ -13,21 +13,21 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "/Users/amyzhang/Projects/Bookstore/Bookstore/Views/_ViewImports.cshtml"
-using Bookstore;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "/Users/amyzhang/Projects/Bookstore/Bookstore/Views/_ViewImports.cshtml"
+#line 4 "/Users/amyzhang/Projects/Bookstore/Bookstore/Views/_ViewImports.cshtml"
 using Bookstore.Models;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "/Users/amyzhang/Projects/Bookstore/Bookstore/Views/_ViewImports.cshtml"
+using Bookstore.Models.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"13d997f3c0487a4271425847f520061dffe2e64d", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5307c898c9161e828ae23bd180b53480292217ce", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"649591cf6611b2ec47f10627202f02d19f1b50cd", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

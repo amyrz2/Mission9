@@ -1,15 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
 }
 
-@model IQueryable<Book>
+@model BooksViewModel
 
 <div class="text-center">
     <h1>Welcome to</h1>
     <h1>Amy's Bookstore</h1>
 
-@*display model*@
-    @foreach (Book b in Model)
+    @*display model*@
+    @foreach (Book b in Model.Books)
     {
         <h3>@b.Title</h3>
 
@@ -25,8 +26,8 @@
         <br />
     }
 
-@*page numbers*@
-    <a asp-action="Index" asp-route-pageNum="1">1</a>
+    @*page numbers*@
+<div page-blah="@Model.PageInfo" page-action="Index"></div>
 
 </div>
 
