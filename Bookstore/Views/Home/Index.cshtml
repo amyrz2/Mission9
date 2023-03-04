@@ -6,8 +6,8 @@
 @model BooksViewModel
 
 <div class="text-center">
-    <h1>Welcome to</h1>
-    <h1>Amy's Bookstore</h1>
+    <h1>Welcome to My Bookstore</h1>
+    <br /><br />
 
     @*display model*@
     @foreach (Book b in Model.Books)
@@ -27,7 +27,16 @@
     }
 
     @*page numbers*@
-<div page-blah="@Model.PageInfo" page-action="Index"></div>
+    @*<div page-blah="@Model.PageInfo" page-action="Index"></div>*@
+
+
+    <div page-blah="@Model.PageInfo" page-action="Index" page-classes-enabled="true"
+              page-class="btn" page-class-normal="btn-outline-dark"
+              page-class-selected="btn-primary" class="btn-group pull-right m-1">
+    </div>
+
 
 </div>
+
+
 
