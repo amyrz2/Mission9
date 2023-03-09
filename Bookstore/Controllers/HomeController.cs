@@ -50,6 +50,11 @@ namespace Bookstore.Controllers
             return View(x);
         }
 
+        public IActionResult SignIn()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
