@@ -82,3 +82,9 @@
 /Users/amyzhang/Projects/Bookstore/Bookstore/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/amyzhang/Projects/Bookstore/Bookstore/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/amyzhang/Projects/Bookstore/Bookstore/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/Users/amyzhang/Projects/Bookstore/Bookstore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/BookSummary.cshtml.g.cs
+/Users/amyzhang/Projects/Bookstore/Bookstore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Category/Default.cshtml.g.cs
+/Users/amyzhang/Projects/Bookstore/Bookstore/obj/Debug/netcoreapp3.1/Razor/Pages/Buy.cshtml.g.cs
+/Users/amyzhang/Projects/Bookstore/Bookstore/obj/Debug/netcoreapp3.1/Razor/Pages/_Buy_Layout.cshtml.g.cs
+/Users/amyzhang/Projects/Bookstore/Bookstore/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs
+/Users/amyzhang/Projects/Bookstore/Bookstore/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
