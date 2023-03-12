@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Bookstore.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -38,6 +39,13 @@ namespace Bookstore
 
             services.AddDistributedMemoryCache();
             services.AddSession();
+
+            // call the method to get instance of basket or make a new basket
+            services.AddScoped<Basket>(x => SessionBasket.GetBasket(x));
+
+            // setting up relationship between IHttpContextAccessor and HttpContextAccessor
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
