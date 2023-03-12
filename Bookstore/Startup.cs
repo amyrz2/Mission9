@@ -65,8 +65,8 @@ namespace Bookstore
             {
 
                 endpoints.MapControllerRoute(
-                    "typepage",
-                    "{projectType}/Page{pageNum}",
+                    "categoryPage",
+                    "{category}/Page{pageNum}", // change how the URL is shown on the search bar when you go to different pages
                     new { Controller = "Home", action = "Index" });
 
                 endpoints.MapControllerRoute(
@@ -75,8 +75,8 @@ namespace Bookstore
                     defaults: new { Controller = "Home", action = "Index", pageNum = 1 });
 
                 endpoints.MapControllerRoute(
-                    "type",
-                    "{projectType}",
+                    "category",
+                    "{CrojectType}",
                     new { Controller = "Home", action = "Index", pageNum = 1 });
 
                 endpoints.MapDefaultControllerRoute();
