@@ -13,6 +13,7 @@
     <None Remove="Components\" />
     <None Remove="Views\Shared\Components\" />
     <None Remove="Pages\" />
+    <None Remove="Views\Buy\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.32">
@@ -27,5 +28,6 @@
     <Folder Include="Components\" />
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Pages\" />
+    <Folder Include="Views\Buy\" />
   </ItemGroup>
 </Project>
