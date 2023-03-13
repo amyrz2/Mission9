@@ -10,7 +10,7 @@ namespace Bookstore.Models
         [Key]
         [BindNever]
 
-        public int DonationID { get; set; }
+        public int BuyId { get; set; }
 
         [BindNever]
         public ICollection<BasketLineItem> Lines { get; set; }

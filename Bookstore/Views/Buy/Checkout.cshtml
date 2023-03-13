@@ -9,12 +9,13 @@
 @*Form to gather user input for checkout*@
 <form method="post">
 
+    <div asp-validation-summary="All" class="text-danger"></div>
+
     <h4>Ship To</h4>
 
     <div class="form-group">
         <label asp-for="Name">Name:</label><input asp-for="Name" class="form-control" />
     </div>
-
 
     <h4>Address</h4>
 
@@ -48,7 +49,7 @@
     </div>
 
     <div class="float-end">
-        <input class="btn btn-primary" type="submit" value="Complete" />
+        <input class="btn btn-primary" type="submit" value="Send Buy" />
     </div>
 
 </form>

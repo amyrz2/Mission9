@@ -90,3 +90,4 @@
 /Users/amyzhang/Projects/Bookstore/Bookstore/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
 /Users/amyzhang/Projects/Bookstore/Bookstore/obj/Debug/netcoreapp3.1/Razor/Views/Home/SignIn.cshtml.g.cs
 /Users/amyzhang/Projects/Bookstore/Bookstore/obj/Debug/netcoreapp3.1/Razor/Views/Buy/Checkout.cshtml.g.cs
+/Users/amyzhang/Projects/Bookstore/Bookstore/obj/Debug/netcoreapp3.1/Razor/Pages/BuyCompleted.cshtml.g.cs
