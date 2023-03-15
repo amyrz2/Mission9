@@ -36,6 +36,8 @@ namespace Bookstore
             services.AddScoped<IBookstoreRepository, EFBookstoreRepository>();
             services.AddScoped<IBuyRepository, EFBuyRepository>();
 
+            services.AddScoped<Buy>();
+
             services.AddRazorPages();
 
             services.AddDistributedMemoryCache();

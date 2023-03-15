@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Bookstore.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,14 +7,16 @@ namespace Bookstore.Components
 {
     public class CartSummaryViewComponent : ViewComponent
     {
-        private Buy buy;
-        public CartSummaryViewComponent(Buy cartService)
+        private Basket basket { get; }
+
+        public CartSummaryViewComponent (Basket b)
         {
-            buy = cartService;
+            basket = b;
         }
+
         public IViewComponentResult Invoke()
         {
-            return View(buy);
+            return View(basket);
         }
     }
 }

@@ -19,8 +19,15 @@ using Bookstore.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/Users/amyzhang/Projects/Bookstore/Bookstore/Pages/_ViewImports.cshtml"
+using Bookstore.Models.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c7fed4c2af6369c6fca19cda9939ff236e8f9f50", @"/Pages/BuyCompleted.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e35bfb162673326ca6553ae7b4ac2f0ec638609e", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6e809f332e05183edfa1eb3a52a480ed0e3137e6", @"/Pages/_ViewImports.cshtml")]
     #nullable restore
     public class Pages_BuyCompleted : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     #nullable disable
@@ -52,7 +59,7 @@ using Bookstore.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\n<div class=\"text-center\">\n    <h2>Thank you for your order!</h2>\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7fed4c2af6369c6fca19cda9939ff236e8f9f503601", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7fed4c2af6369c6fca19cda9939ff236e8f9f503781", async() => {
                 WriteLiteral("Return Home");
             }
             );

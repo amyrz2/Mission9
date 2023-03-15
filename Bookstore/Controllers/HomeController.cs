@@ -27,6 +27,7 @@ namespace Bookstore.Controllers
 
             int pageSize = 10;
 
+            //var buy = new Buy();
             var x = new BooksViewModel
             {
                 Books = repo.Books
@@ -44,6 +45,7 @@ namespace Bookstore.Controllers
                     CurrentPage = pageNum
 
                 }
+             
             };
 
 
